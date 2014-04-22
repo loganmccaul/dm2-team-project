@@ -44,6 +44,11 @@
 		var ctx = frame.getContext("2d");
 
 		$(document).ready(function(){
+			$(document).keydown(function(event) {
+			 	keys[event.which] = true;
+			 	}).keyup(function(event){
+				 	delete keys[event.which];
+			});
 
 			
 
